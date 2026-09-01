@@ -1,5 +1,11 @@
 from backend.database.database import Base, engine
-from backend.models import Customer, Document, KYCVerification, OnboardingCase
+from backend.models import (
+    ComplianceCheck,
+    Customer,
+    Document,
+    KYCVerification,
+    OnboardingCase,
+)
 
 
 def init_database():

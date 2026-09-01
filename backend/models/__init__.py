@@ -1,3 +1,4 @@
+from backend.models.compliance import ComplianceCheck
 from backend.models.customer import Customer
 from backend.models.document import Document
 from backend.models.kyc import KYCVerification
@@ -8,4 +9,5 @@ __all__ = [
     "OnboardingCase",
     "Document",
     "KYCVerification",
+    "ComplianceCheck",
 ]
