@@ -5,6 +5,7 @@ from backend.models import (
     Document,
     KYCVerification,
     OnboardingCase,
+    RiskAssessment,
 )
 
 
