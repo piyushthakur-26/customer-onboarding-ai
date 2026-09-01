@@ -1,10 +1,12 @@
 from backend.database.database import Base, engine
 from backend.models import (
+    AuditLog,
     ComplianceCheck,
     Customer,
     Document,
     KYCVerification,
     OnboardingCase,
+    OnboardingDecision,
     RiskAssessment,
 )
 
