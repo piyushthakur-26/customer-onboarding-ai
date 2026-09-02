@@ -9,9 +9,15 @@ from backend.database.database import Base
 class Customer(Base):
     __tablename__ = "customers"
 
-    id: Mapped[int] = mapped_column(primary_key=True, index=True)
+    id: Mapped[int] = mapped_column(
+        primary_key=True,
+        index=True,
+    )
 
-    full_name: Mapped[str] = mapped_column(String(200), nullable=False)
+    full_name: Mapped[str] = mapped_column(
+        String(200),
+        nullable=False,
+    )
 
     email: Mapped[str] = mapped_column(
         String(320),
@@ -20,7 +26,10 @@ class Customer(Base):
         index=True,
     )
 
-    phone: Mapped[str] = mapped_column(String(30), nullable=False)
+    phone: Mapped[str] = mapped_column(
+        String(30),
+        nullable=False,
+    )
 
     created_at: Mapped[datetime] = mapped_column(
         DateTime,
